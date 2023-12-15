@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#961c26"
+    tools:context=".RegisterActivity">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="97dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:onClick="loginAction"
+        android:text="Voltar"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="636dp"
+        android:layout_marginEnd="128dp"
+        android:backgroundTint="@color/black"
+        android:onClick="mainAction"
+        android:text="Página Principal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+
+    <Button
+        android:id="@+id/registerUser"
+        android:layout_width="133dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/black"
+        android:onClick="formAction"
+        android:text="Cadastrar"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPasswordRegister"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/idUserRegister"
+        android:layout_width="326dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="100dp"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:ems="10"
+        android:hint=" nome"
+        android:inputType="text"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/idEmailRegister"
+        android:layout_width="325dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:ems="10"
+        android:hint=" email"
+        android:inputType="text"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idUserRegister"
+        tools:ignore="HardcodedText,TextFields" />
+
+    <EditText
+        android:id="@+id/idPasswordRegister"
+        android:layout_width="327dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:ems="10"
+        android:hint=" senha"
+        android:inputType="text"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEmailRegister"
+        tools:ignore="HardcodedText,TextFields" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
