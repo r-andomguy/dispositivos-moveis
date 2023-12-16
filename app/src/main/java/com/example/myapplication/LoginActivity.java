@@ -2,7 +2,6 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -35,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
         register = findViewById(R.id.userRegister);
         error = findViewById(R.id.loginError);
 
-       Intent dataForm = getIntent();
+        Intent dataForm = getIntent();
         this.compiledUser = dataForm.getStringExtra("usuario");
         this.compiledEmail = dataForm.getStringExtra("email");
         this.compiledPassword = dataForm.getStringExtra("senha");
@@ -53,15 +52,15 @@ public class LoginActivity extends AppCompatActivity {
 
 
     }
-    
+
     public void profile(View view){
         this.userEmail  = setEmail.getText().toString();
         this.userPassword = setPassword.getText().toString();
 
         if (userEmail.equals(compiledEmail) && (userPassword.equals(compiledPassword))){
-            Intent perfil = new Intent(LoginActivity.this, ProfileActivity.class);
-            perfil.putExtra("nome", "Bem-vindo " + this.compiledUser +".");
-            startActivity(perfil);
+            Intent profile = new Intent(LoginActivity.this, ProfileActivity.class);
+            profile.putExtra("user","Olá,\n" + this.compiledUser + ".");
+            startActivity(profile);
         } else{
             error.setText("Email ou Senha inválida " + this.userPassword);
         }

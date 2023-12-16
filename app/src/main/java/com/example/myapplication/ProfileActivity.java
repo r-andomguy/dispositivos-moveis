@@ -16,13 +16,12 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_user_perfil);
 
         Intent intent = getIntent();
-        String hello = intent.getStringExtra("nome");
+        String hello = intent.getStringExtra("user");
 
         TextView getHello = findViewById(R.id.helloWorld);
         getHello.setText(hello);
 
     }
-
 
     public  void profileArea(View view){
         Intent i = new Intent(ProfileActivity.this, LoginActivity.class);
